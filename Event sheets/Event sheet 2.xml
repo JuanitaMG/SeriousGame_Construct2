@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <variable constant="0" name="barvalue2" sid="369430884101591" static="0" type="number">0</variable>
+        <variable constant="0" name="puntos2" sid="140706851106730" static="0" type="number">0</variable>
+        <event-block sid="642051952072108">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="728815070442862" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="376513355504616" type="player">
+                    <param id="0" name="Animation">&quot;Saltar&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="335809762373488">
+            <conditions>
+                <condition id="2" name="Key is down" sid="960740634222078" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="224293320706347" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="941224315951839" type="player">
+                    <param id="0" name="Animation">&quot;Caminando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220114478348158">
+            <conditions>
+                <condition id="2" name="Key is down" sid="778657228405256" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="527898869537353" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="555038246204417" type="player">
+                    <param id="0" name="Animation">&quot;Caminando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="256720089258948">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="855218534766169" type="player" />
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="877052843043729" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="306095141793069" type="player">
+                    <param id="0" name="Animation">&quot;Parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="329459027550029">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="691737916636952" type="player">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="602190006631726" type="Texto_hada">
+                    <param id="0" name="Text">&quot;Recuerda: recoge todas las flores mágicas para que veas florecer el arbol&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="762377950923192">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="620250715161219" type="player">
+                    <param id="0" name="Object">Sprite23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="657019206971140" type="Sprite23" />
+                <action id="-10" name="Add to" sid="437116018382665" type="System">
+                    <param id="0" name="Variable">puntos2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="550707434905148">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="581889716178256" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="715344017647824" type="puntos22">
+                    <param id="0" name="Text">puntos2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101624694329145">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="597575186318767" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="160431700250821" type="System">
+                    <param id="0" name="Variable">barvalue2</param>
+                    <param id="1" name="Value">barLife.Height</param>
+                </action>
+                <action id="-15" name="Set visible" sid="345985582913109" type="Ganó">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="507380015305056">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="592747253196267" type="System">
+                    <param id="0" name="Variable">barvalue2</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="990392296113066" type="barLife">
+                    <param id="0" name="Width">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="431468824960761">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="662338993036961" type="player">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="653822881883719" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619125853311763">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="221864753173946" type="player">
+                    <param id="0" name="Object">Sprite25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="592068583721358" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="779474679862689">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="174431109545528" type="player">
+                    <param id="0" name="Object">Sprite30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="492444131222101" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="495384631807800">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="816259727091121" type="player">
+                    <param id="0" name="Object">Sprite31</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="328945790341705" type="Sprite31">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="465583360246930" type="Ganó">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="880005906852356" type="Sprite31">
+                    <param id="0" name="Animation">&quot;Florecer&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="742173539034981" type="Sprite31">
+                    <param id="0" name="Instance variable">Estado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="886155962791539">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="994217077116073" type="player">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="892630033028291" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="948351979138079" type="player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546724545402388">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="113582546228657" type="player">
+                    <param id="0" name="Object">Sprite30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="875210874357930" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="604203520670070" type="player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880740636598346">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="361601285182728" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="856829087831986" type="System">
+                    <param id="0" name="Variable">barvalue2</param>
+                    <param id="1" name="Value">barLife.Height</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="861645672713349">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="789004297834588" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="886251738726670" type="barLife">
+                    <param id="0" name="Height">barvalue2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="263801840981389">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="431620720219911" type="player">
+                    <param id="0" name="Object">Sprite29</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="673575646417612" type="System">
+                    <param id="0" name="Variable">barvalue2</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-6" name="Set height" sid="149471389751836" type="barLife">
+                    <param id="0" name="Height">barvalue2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="302880657164112">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="658206225234005" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="940258165021896" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="468172844741991">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="604839423585461" type="player">
+                    <param id="0" name="Object">Sprite30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="239658339141159" type="System">
+                    <param id="0" name="Variable">barvalue2</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-6" name="Set height" sid="744306971231963" type="barLife">
+                    <param id="0" name="Height">barvalue2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

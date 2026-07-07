@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="puntoss" sid="626851546565649" static="0" type="number">0</variable>
+        <variable constant="0" name="barvalue" sid="328513352731520" static="0" type="number">0</variable>
+        <event-block sid="307206249334163">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="856503850926851" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="809907200937918" type="player">
+                    <param id="0" name="Animation">&quot;Saltar&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="642207681056457">
+            <conditions>
+                <condition id="2" name="Key is down" sid="915384687964703" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="581902237995156" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="343082478168405" type="player">
+                    <param id="0" name="Animation">&quot;Caminando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="176501241688109">
+            <conditions>
+                <condition id="2" name="Key is down" sid="395542663281960" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="145780885292880" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="424899280340109" type="player">
+                    <param id="0" name="Animation">&quot;Caminando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="504166087749089">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="651406957372926" type="player" />
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="580063198444050" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="807373783250660" type="player">
+                    <param id="0" name="Animation">&quot;Parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="974165660840261">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="292307427778449" type="player">
+                    <param id="0" name="Object">Sprite14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="755490444223914" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="671496607546306" type="player">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="412467980619280">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="180614308720046" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="946849641580737" type="System">
+                    <param id="0" name="Variable">barvalue</param>
+                    <param id="1" name="Value">barLife.Height</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="689915486587853">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="460076730019255" type="player">
+                    <param id="0" name="Object">Sprite12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="423554062595753" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="140688079683637">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="628068952903828" type="player">
+                    <param id="0" name="Object">Sprite24</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="772336312796142" type="Text_M">
+                    <param id="0" name="Text">&quot;Consigue 6 semillas para pasar al sigueinte nivel, buena suerte amigo!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="167135056670113">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="248097431362714" type="player">
+                    <param id="0" name="Object">Sprite13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="394224937999453" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="369259159487127">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="297942360191261" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="764718804086084" type="barLife">
+                    <param id="0" name="Height">barvalue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="714940421159656">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="188875158029197" type="player">
+                    <param id="0" name="Object">Sprite14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="727145998158998" type="System">
+                    <param id="0" name="Variable">barvalue</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+                <action id="-6" name="Set height" sid="990264991392334" type="barLife">
+                    <param id="0" name="Height">barvalue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="844959232300887">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="872394681847689" type="player">
+                    <param id="0" name="Instance variable">Vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="725051448269034" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="868907450513757">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="569825632661648" type="player">
+                    <param id="0" name="Object">Sprite9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="726491399123241" type="Sprite9" />
+                <action id="-10" name="Add to" sid="646724619202595" type="System">
+                    <param id="0" name="Variable">puntoss</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759938529754057">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="896904347717397" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="475092048418529" type="puntoss">
+                    <param id="0" name="Text">puntoss</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="998693801705819">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="908425858478833" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite33</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="101711028411218" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Serious Game</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3m20z0k736knc</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Layout 3</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite" sid="927607725384699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655702958603909" speed="5">
+                    <frame duration="1" hotspotX="0.50064" hotspotY="0.501193" original-source="C:\Users\Yalile Cordon Vasco\Downloads\Bosque\Bosque\Imagenes\fondoverde.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="833738011912715">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703273966746989" speed="5">
+                    <frame duration="1" hotspotX="0.500982" hotspotY="0.501475" original-source="C:\Users\Yalile Cordon Vasco\Downloads\Bosque\Bosque\Imagenes\SueloDeforestado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="381277671318683">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="778815314236215">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133181930077238" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Yalile Cordon Vasco\Downloads\Bosque\Bosque\Imagenes\SueloDeforestado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="518752524569403">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707520401101298" speed="5">
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.502008" original-source="C:\Users\Yalile Cordon Vasco\OneDrive\Imágenes\bubo2.bmp" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="398486011798246">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855911501415346" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Yalile Cordon Vasco\OneDrive\Imágenes\Borde.bmp" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="397828262725027">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="140288183554655">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149362148868996" speed="5">
+                    <frame duration="1" hotspotX="-1.17333" hotspotY="-0.5" original-source="C:\Users\Yalile Cordon Vasco\Downloads\arbol 1 (1).png">
+                        <collision-poly>
+                            <point x="0.00980392" y="0.00980392" />
+                            <point x="0.00980392" y="0.00980392" />
+                            <point x="0.00980392" y="0.169539" />
+                            <point x="0.00980392" y="0.00980392" />
+                            <point x="0.901717" y="0.887614" />
+                            <point x="0.00980392" y="0.461165" />
+                            <point x="0.00980392" y="0.742533" />
+                            <point x="0.00980392" y="0.00980392" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="268057852973081">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="112565514805479">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149882412773954" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="430923090633091">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903693347950448" speed="5">
+                    <frame duration="1" hotspotX="0.500832" hotspotY="0.501205" original-source="C:\Users\Yalile Cordon Vasco\Downloads\ArbolCortado-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.249584" y="0.361446" />
+                            <point x="0.499168" y="0.0746988" />
+                            <point x="0.856905" y="0.207229" />
+                            <point x="0.865225" y="0.498795" />
+                            <point x="0.933444" y="0.903614" />
+                            <point x="0.499168" y="0.922892" />
+                            <point x="0.078203" y="0.886747" />
+                            <point x="0.242928" y="0.498795" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="240892537830344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332825418305820" speed="5">
+                    <frame duration="1" hotspotX="0.501466" hotspotY="0.377358" original-source="C:\Users\Yalile Cordon Vasco\Downloads\Bosque\Bosque\Imagenes\puente.png">
+                        <collision-poly>
+                            <point x="0.334311" y="0.0188679" />
+                            <point x="0.653959" y="0.0440252" />
+                            <point x="0.973607" y="0.371069" />
+                            <point x="0.639296" y="0.672956" />
+                            <point x="0.498534" y="0.245283" />
+                            <point x="0.225806" y="0.962264" />
+                            <point x="0.0997067" y="0.371069" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="411649984739500">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="650927897346584">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="387062438265782">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="411381225326821">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="741754534389827" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="833685683697621">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776260893884103" speed="5">
+                    <frame duration="1" hotspotX="0.502203" hotspotY="0.501279" original-source="C:\Users\Yalile Cordon Vasco\Downloads\semilla.png">
+                        <collision-poly>
+                            <point x="0.215729" y="0.125096" />
+                            <point x="0.5" y="0" />
+                            <point x="0.779877" y="0.127643" />
+                            <point x="0.945079" y="0.499873" />
+                            <point x="0.827768" y="0.900127" />
+                            <point x="0.5" y="0.99949" />
+                            <point x="0.202988" y="0.882293" />
+                            <point x="0.0711775" y="0.499873" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="449628187305458">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Vida" sid="491800139427393" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="112804552699375">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="705907811117296">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="961461491825027">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="715458030551092">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="238136433298399" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\boy 1,1.png">
+                        <collision-poly>
+                            <point x="0.133429" y="0.0478641" />
+                            <point x="0.5" y="0.000257334" />
+                            <point x="0.868723" y="0.0470921" />
+                            <point x="0.967001" y="0.988163" />
+                            <point x="0.5" y="0.994853" />
+                            <point x="0.171449" y="0.938497" />
+                            <point x="0.0602583" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Saltar" pingpong="0" repeatcount="1" repeatto="0" sid="663794322056439" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\boy 2.png">
+                        <collision-poly>
+                            <point x="0.260687" y="0.171436" />
+                            <point x="0.5" y="0.00150602" />
+                            <point x="0.809924" y="0.125" />
+                            <point x="0.696183" y="0.5" />
+                            <point x="0.919084" y="0.946787" />
+                            <point x="0.5" y="0.734438" />
+                            <point x="0.251145" y="0.834839" />
+                            <point x="0.0019084" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Caminando" pingpong="0" repeatcount="1" repeatto="0" sid="796588660365815" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\niño 3.png">
+                        <collision-poly>
+                            <point x="0.201968" y="0.10987" />
+                            <point x="0.499786" y="0.000465549" />
+                            <point x="0.826701" y="0.0942737" />
+                            <point x="0.740265" y="0.5" />
+                            <point x="0.891742" y="0.941108" />
+                            <point x="0.499786" y="0.841946" />
+                            <point x="0.0740265" y="0.95973" />
+                            <point x="0.104835" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Yalile Cordon Vasco\Downloads\niñoparado.png">
+                        <collision-poly>
+                            <point x="0.116667" y="0.07" />
+                            <point x="0.5" y="0.01" />
+                            <point x="0.9" y="0.06" />
+                            <point x="0.916667" y="0.5" />
+                            <point x="0.983333" y="0.99" />
+                            <point x="0.5" y="1" />
+                            <point x="0.183333" y="0.89" />
+                            <point x="0.0666667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="168377420436604">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="789140211473035">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="432849967558870">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="901687455976678" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\ChatGPT Image 6 oct 2025, 00_48_08.png">
+                        <collision-poly>
+                            <point x="0.329103" y="0.18568" />
+                            <point x="0.5" y="0.00930788" />
+                            <point x="0.836294" y="0.0923628" />
+                            <point x="0.963198" y="0.5" />
+                            <point x="0.93824" y="0.965155" />
+                            <point x="0.5" y="0.999761" />
+                            <point x="0.310068" y="0.82506" />
+                            <point x="0.072758" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="712051635708161">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Text" sid="828611646699118">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="puntos22" sid="533641413944221">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="barLife" sid="711201100842988">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382294482822493" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="107604845465525">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="489976586368064">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476149714885294" speed="5">
+                    <frame duration="1" hotspotX="0.498534" hotspotY="0.439456" original-source="C:\Users\faber\Downloads\ChatGPT Image 6 oct 2025, 00_23_05.png">
+                        <collision-poly>
+                            <point x="0.230078" y="0.122028" />
+                            <point x="0.499883" y="0" />
+                            <point x="0.783179" y="0.106197" />
+                            <point x="0.826347" y="0.438664" />
+                            <point x="0.969344" y="0.98961" />
+                            <point x="0.0277235" y="0.992777" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="puerta" sid="181957045561243">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138232931620857" speed="5">
+                    <frame duration="1" hotspotX="0.498233" hotspotY="0.505882" original-source="C:\Users\Yalile Cordon Vasco\Downloads\tronfo entrada.png">
+                        <collision-poly>
+                            <point x="0.336991" y="0.340505" />
+                            <point x="0.494846" y="0.0644637" />
+                            <point x="0.783234" y="0.211686" />
+                            <point x="0.670914" y="0.499996" />
+                            <point x="0.686093" y="0.693224" />
+                            <point x="0.494846" y="0.966198" />
+                            <point x="0.282349" y="0.717761" />
+                            <point x="0.340027" y="0.499996" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="681036884756087">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310892261193066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="565526167551832">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201341342471715" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="304352094391819">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="174566734416121">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153442037785997" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500488" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 20_07_01.png">
+                        <collision-poly>
+                            <point x="0.217165" y="0.325854" />
+                            <point x="0.5" y="0.322927" />
+                            <point x="0.79909" y="0.301463" />
+                            <point x="0.99935" y="0.500488" />
+                            <point x="0.941482" y="0.913171" />
+                            <point x="0.0585176" y="0.913171" />
+                            <point x="0.000650195" y="0.500488" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="388036766355311">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="288486308516490" speed="5">
+                    <frame duration="1" hotspotX="-0.0907801" hotspotY="-0.015873" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 20_37_14.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0.751773" y="0.654762" />
+                            <point x="0" y="0" />
+                            <point x="0" y="0.53373" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="761144684745892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847225956921620" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 20_37_14.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="375374472902611">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="133543475778821" speed="5">
+                    <frame duration="1" hotspotX="-0.0858369" hotspotY="1.01386" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 20_37_14.png">
+                        <collision-poly>
+                            <point x="0" y="0.491089" />
+                            <point x="0" y="0.718812" />
+                            <point x="0.763949" y="1" />
+                            <point x="0" y="0.847525" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="748512887050680">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560942775351572" speed="5">
+                    <frame duration="1" hotspotX="0.499022" hotspotY="0.482993" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 22_09_56.png">
+                        <collision-poly>
+                            <point x="0.375734" y="0.223129" />
+                            <point x="0.499022" y="0.208844" />
+                            <point x="0.599804" y="0.238776" />
+                            <point x="0.73092" y="0.482993" />
+                            <point x="0.649706" y="0.761905" />
+                            <point x="0.499022" y="0.755102" />
+                            <point x="0.388454" y="0.734014" />
+                            <point x="0.223092" y="0.482993" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Texto_hada" sid="216169501890380">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite21" sid="369393547954416">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706017322672049" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 22_42_26.png">
+                        <collision-poly>
+                            <point x="0.255527" y="0.383041" />
+                            <point x="0.5" y="0.316764" />
+                            <point x="0.695059" y="0.457115" />
+                            <point x="0.863459" y="0.5" />
+                            <point x="0.922627" y="0.884016" />
+                            <point x="0.5" y="0.89961" />
+                            <point x="0.0793238" y="0.881092" />
+                            <point x="0.556567" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="648690098712373">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="631738599534815">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="512222125227680" speed="5">
+                    <frame duration="1" hotspotX="0.500911" hotspotY="0.501976" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="313831403573602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="384198223145644" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500985" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 22_51_59.png">
+                        <collision-poly>
+                            <point x="0.423002" y="0.281024" />
+                            <point x="0.5" y="0.261983" />
+                            <point x="0.630604" y="0.244911" />
+                            <point x="0.744639" y="0.500985" />
+                            <point x="0.546784" y="0.700591" />
+                            <point x="0.5" y="0.797111" />
+                            <point x="0.268031" y="0.500985" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="380974685646549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700003283572493" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501312" original-source="C:\Users\faber\Downloads\ChatGPT Image 5 oct 2025, 23_08_08.png">
+                        <collision-poly>
+                            <point x="0.530214" y="0.353675" />
+                            <point x="0.5" y="0.357612" />
+                            <point x="0.610136" y="0.259186" />
+                            <point x="0.836257" y="0.501312" />
+                            <point x="0.538986" y="0.695538" />
+                            <point x="0.5" y="0.694226" />
+                            <point x="0.493177" y="0.673885" />
+                            <point x="0.128655" y="0.501312" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text_M" sid="952211866320379">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite25" sid="227906847841145">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="764032802723835">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="266368093097262">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757613159434928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\Gemini_Generated_Image_q4m1o3q4m1o3q4m1-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.312" y="0.312" />
+                            <point x="0.5" y="0.17" />
+                            <point x="0.84" y="0.5" />
+                            <point x="0.71" y="0.71" />
+                            <point x="0.5" y="0.798" />
+                            <point x="0.276" y="0.724" />
+                            <point x="0.202" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="698552812390045">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="371056839065705">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579548545063868" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.292191" original-source="C:\Users\faber\Downloads\plataformas.png">
+                        <collision-poly>
+                            <point x="0.255527" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.695059" y="0" />
+                            <point x="0.863459" y="0" />
+                            <point x="0.922627" y="0.700252" />
+                            <point x="0.5" y="0.740554" />
+                            <point x="0.0793238" y="0.692695" />
+                            <point x="0.556567" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="808545196227077">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916841784349212" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\Gemini_Generated_Image_3pbq2s3pbq2s3pbq.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite28" sid="686972825700731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200329696507022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\Gemini_Generated_Image_3pbq2s3pbq2s3pbq__1_-removebg-preview.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite29" sid="557471946469136">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="169249583846184">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249098333333706" speed="5">
+                    <frame duration="1" hotspotX="0.440789" hotspotY="0.408602" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite30" sid="365789489258849">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="133934612959447">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477313917896792" speed="5">
+                    <frame duration="1" hotspotX="1.48592" hotspotY="1.12632" original-source="C:\Users\faber\Downloads\Gemini_Generated_Image_3pbq2s3pbq2s3pbq__1_-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.507042" y="0.394737" />
+                            <point x="1" y="0.257895" />
+                            <point x="1" y="1" />
+                            <point x="0.253521" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite31" sid="521069484339363">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Estado" sid="543914937852168" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="SinFlor" pingpong="0" repeatcount="1" repeatto="0" sid="710153216977211" speed="5">
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Florecer" pingpong="0" repeatcount="1" repeatto="0" sid="855971748132352" speed="5">
+                    <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="C:\Users\faber\Downloads\Gemini_Generated_Image_z0arn7z0arn7z0ar-removebg-preview.png">
+                        <collision-poly>
+                            <point x="0.614173" y="0.60625" />
+                            <point x="1" y="0.56875" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.283465" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="puntoss" sid="236893746425694">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Ganaste" sid="146231562139549">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Ganó" sid="236978859214114">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite32" sid="847060097404629">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402056505409537" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\faber\Downloads\Gemini_Generated_Image_1qjoeu1qjoeu1qjo (1).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite33" sid="945481207578562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519723519606822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="900309193473606">
+            <plugin id="Mouse" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 3.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="79" />
+        <global-instance type="Mouse" uid="186" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
